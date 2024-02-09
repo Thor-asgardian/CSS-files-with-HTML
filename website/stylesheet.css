@@ -1,0 +1,41 @@
+  body {
+    color: green; 
+  }
+  h1 {
+    background-color: #D3D3D3;
+    padding: 10px; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: solid black; 
+  }
+  h2 {
+    background-color: yellow;
+    padding: 10px; 
+    text-align: center;
+    font-family: Arial, sans-serif; 
+    border: solid black;
+  }
+  .blue {
+    color: blue;
+    font-family: helvetica;
+    line-height: 1.5; 
+    text-align: center; 
+  }
+  .green {
+    color: green;
+    font-family: helvetica;
+    line-height: 1.5; 
+    text-align: center; 
+  }
+  blockquote.blue {
+    color: blue;
+    font-family: helvetica;
+    line-height: 1.5; 
+    text-align: center; 
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  h1, h2 {
+    border: solid black;
+  }
