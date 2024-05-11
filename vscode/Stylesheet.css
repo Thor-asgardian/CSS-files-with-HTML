@@ -218,10 +218,12 @@ i {
     font-weight: bold;
     background: #fff !important;
     padding: 25px 9px !important;
+    text-align: center;
 }
 
 .card-body {
     padding: 30px 0px !important;
+    text-align: center;
 }
 
 .card-body p {
@@ -235,6 +237,7 @@ i {
 .card-footer {
     background: #fff !important;
     padding: 30px 0px !important;
+    text-align: center;
 }
 
 .card-footer a {
@@ -414,14 +417,14 @@ form:hover .form-button button {
 }
 
 .footersection p {
-    color: #fff;
+    color: #e90c0c;
 }
 
 .footersection li a {
     font-size: 0.9rem;
     line-height: 1.6;
     font-weight: 400;
-    color: #fff;
+    color: #00a1fe;
     text-transform: capitalize;
 }
 
