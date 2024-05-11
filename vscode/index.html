@@ -13,8 +13,7 @@
     <div class="header" id="topheader">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container text-uppercase p-2">
-                <img src="Real Estate, Home, House Logo.png" class="class1">
-                <a class="navbar-brand font-weight-bold text-white" href="greetings.html">Greetings</a>
+                <a class="navbar-brand font-weight-bold text-white" href="#">Greetings</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -22,13 +21,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto text-uppercase">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="price.html">Price</a>
+                            <a class="nav-link" href="#">Price</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -40,8 +39,8 @@
                     <h1 class="font-weight-bold">We are developers</h1>
                     <p>We create websites here</p>
                     <div class="header-buttons">
-                        <a href="about.html">AboutUs</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="#">AboutUs</a>
+                        <a href="#">Contact</a>
                     </div>
                 </div>
             </div>
@@ -384,22 +383,24 @@
                 </div>
             </div>
             <div class="mt-5 text-center">
-                <p>copyright 2024 All rights reserved | This is made by Bhuvan</p>
+                <p>&copy 2024 All rights reserved | This is made by Bhuvan</p>
             </div>
         </div>
     </footer>
     <!-- **************************Footer end************************************************* -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-JtQPj/jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DFfFNE=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-up/1.0.0/jquery.counterup.min.js" integrity="sha256-k2lvC7pR1nWVW6D4SBR6vOvfQfo/JY6cWRoNJnQK7p0=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script>
+      $(document).ready(function() {
+        // Initialize counter animation
         $('.count').counterUp({
-            delay: 10,
-            time: 3000
+          delay: 10,
+          time: 3000
         });
-    </script>
+  });
+</script>
+
 </body>
 </html>
