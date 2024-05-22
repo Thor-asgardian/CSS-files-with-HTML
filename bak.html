@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bank Preliminary Site</title>
+        <link rel="stylesheet" href="st.css">
+    </head>
+    <body>
+        <form action="action_page.php" onsubmit="return validateForm()" method="post">
+            <label for="customerId">Customer Id:</label>
+            <input type="text" id="customerId" name="customerId"><br><br>
+
+            <label for="userId">User Id:</label>
+            <input type="text" id="userId" name="userId"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="token">Token value:</label>
+            <input type="text" id="token" name="token"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function validateForm() {
+    // Retrieve form values
+    var customerId = document.getElementById('customerId').value;
+    var userId = document.getElementById('userId').value;
+    var password = document.getElementById('password').value;
+    var token = document.getElementById('token').value;
+    var email = document.getElementById('email').value;
+
+    // Regular expressions for validation
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var tokenPattern = /^\d+$/;
+
+    // Validate Customer ID
+    if (customerId === "") {
+        alert("Customer ID must be filled out");
+        return false;
+    }
+
+    // Validate User ID
+    if (userId === "") {
+        alert("User ID must be filled out");
+        return false;
+    }
+
+    // Validate Password
+    if (password === "") {
+        alert("Password must be filled out");
+        return false;
+    }
+
+    // Validate Token
+    if (token === "") {
+        alert("Token value must be filled out");
+        return false;
+    } else if (!tokenPattern.test(token)) {
+        alert("Token value must be a number");
+        return false;
+    }
+
+    // Validate Email
+    if (email === "") {
+        alert("Email must be filled out");
+        return false;
+    } else if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+
+    // If all validations pass
+    return true;
+}
+
+        </script>
+    </body>
+</html>
